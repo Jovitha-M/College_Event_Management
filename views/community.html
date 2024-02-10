@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Community</title>
+    <link rel="stylesheet" href="/public/css/community_style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/public/images/logo.png" width="100px" height="100px" />
+        </div>
+        <div class="menu">
+          <a href="/home">Home</a>
+          <a href="/events">EVENTS</a>
+          <a href="/dept_cards">department</a>
+          <a href="/calendar">calender</a>
+          <a href="/community">Community</a>
+        </div>
+      </nav>
+    </header>
+    <main style="margin-top: 150px">
+      <section id="post-section">
+        <h2>Post a Message</h2>
+        <form id="post-form">
+          <textarea
+            id="message"
+            placeholder="Type your message here..."
+          ></textarea>
+          <input type="file" id="image" accept="image/*" multiple />
+          <input type="file" id="video" accept="video/*" multiple />
+          <button type="submit">Post</button>
+        </form>
+      </section>
+      <section id="messages-section">
+        <h2>Community Messages</h2>
+        <div id="messages-container">
+          <!-- Display messages here using JavaScript -->
+        </div>
+      </section>
+    </main>
+    <script src="/public/js/community_script.js"></script>
+  </body>
+</html>
